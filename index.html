@@ -1,3 +1,131 @@
-<html>
-<body>Gazr is coming ...</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gazr [gather] - Opinionated way to launch common tasks on projects</title>
+  <meta name="author" content="Stan Chollet">
+  <meta name="description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gazr.io">
+  <meta name="twitter:title" content="Gazr [gather] - Opinionated way to launch common tasks on projects">
+  <meta name="twitter:description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta name="twitter:site" content="@dailymotionEng">
+  <meta name="twitter:creator" content="@tsunammis">
+  <meta property="og:title" content="Gazr [gather] - Opinionated way to launch common tasks on projects">
+  <meta property="og:url" content="https://gazr.io">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="gazr.io">
+  <meta property="og:description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta property="og:type" content="website">
+  <!-- Google Tag Manager 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJW7PJJ');</script>
+  -->
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) 
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJW7PJJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+  <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <img class="avatar" src="/images/gazr.svg" alt="Gazr">
+        <p><strong>gazr</strong>, pronounced "Gather", is an opinionated way to launch <strong>common tasks</strong> on your project.</p>  
+    </header>
+    <section>
+        <div class="box">
+            <h2 class="main-title">Main principles</h2>
+            <div class="box-content">
+                <ul>
+                    <li>
+                        A Container runtime as the <strong>only</strong> dependency on developer's laptop.
+                        <p class="details">
+                            Docker provides a full integration with <a href="https://www.docker.com/docker-mac">Mac</a>, <a href="https://www.docker.com/docker-windows">Windows</a> & <a href="https://www.docker.com/docker-ubuntu">Linux <em>(ubuntu)</em></a>.
+                        </p>
+                    </li>
+                    <li>
+                        Use generic task names to launch common actions.
+                    </li>
+                    <li>
+                        Let developers use the technologies &amp; libraries they want.
+                    </li>
+                    <li>
+                        Simplify technical on-boarding.
+                    </li>
+                    <li>
+                        Simplify switching between projects.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box-grey">
+            <h2 class="main-title"><em>Makefile</em> specification</h2>
+            <ul class="make-specification">
+                <li>
+                    <span>make checkstyle</span>
+                    <p class="details">
+                        Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/checkstyle/checkstyle">checkstyle <em>(java)</em></a> etc ... 
+                    </p>
+                </li>
+                <li>
+                    <span>make complexity</span>
+                    <p class="details">
+                        Cyclomatic complexity check <em><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">(McCabe)</a></em>, <a href="https://pypi.python.org/pypi/radon">radon <em>(python)</em></a>, <a href="https://eslint.org/docs/rules/complexity">eslint (js)</a>, <a href="https://phpmd.org/">PHPMD</a>, <a href="http://www.scalastyle.org/rules-0.5.0.html">rules</a> <em>(scala)</em> etc ...
+                    </p>
+                </li>
+                <li>
+                    <span>make fmt</span>
+                    <p class="details">
+                        Format code. e.g <a href="https://prettier.io/">Prettier <em>(js)</em></a>, <a href="https://golang.org/pkg/fmt/">fmt <em>(golang)</em></a>
+                    </p>
+                </li>
+                <li>
+                    <span>make test</span>
+                    <p class="details">
+                        Shortcut to launch function tests, integration tests and unit tests. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ... 
+                    </p>
+                </li>
+                <li>
+                    <span>make test-unit</span>
+                </li>
+                <li>
+                    <span>make test-functional</span>
+                </li>
+                <li>
+                    <span>make test-integration</span>
+                </li>
+                <li>
+                    <span>make run</span>
+                    <p class="details">
+                        Locally run the application, e.g. node index.js, python -m myapp, go run myapp etc ... 
+                    </p>
+                </li>
+                <li>
+                    <span>make watch</span>
+                    <p class="details">
+                        Hot reloading for development. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Story</h2>
+        <p>
+            Developers live in a technological world which is continuously changing.<br />
+            Project switching, technology switching, language switching, a big bunch of switching, don't it ?<br />
+            At dailymotion, we take care of the mental health of our engineers, as they work on over 500+ repositories, developed with more than 50 technological<br />
+            stacks. <br />
+            Therefore we decided to re-think our way to deal with the complexity of our internal codebase.
+        </p>
+    </section>
+</body>
 </html>
