@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="841px" height="183px" viewBox="0 0 841 183" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Layers - Checkstyle (python)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.2936359%" y1="-81.312223%" x2="60.1799016%" y2="89.2253838%" id="linearGradient-1">
+            <stop stop-color="#8BF4D3" offset="0%"></stop>
+            <stop stop-color="#59BF9F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.5398789%" y1="-66.144261%" x2="59.9229307%" y2="87.726681%" id="linearGradient-2">
+            <stop stop-color="#A6EBD5" offset="0%"></stop>
+            <stop stop-color="#59BF9F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.2171451%" y1="-21.9153446%" x2="47.2622729%" y2="64.8789261%" id="linearGradient-3">
+            <stop stop-color="#BBFEE9" offset="0%"></stop>
+            <stop stop-color="#59BF9F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="99" y="25" width="53" height="1"></rect>
+        <rect id="path-5" x="144" y="6" width="20" height="1"></rect>
+        <rect id="path-6" x="164" y="46" width="20" height="1"></rect>
+        <rect id="path-7" x="119" y="27" width="53" height="1"></rect>
+        <rect id="path-8" x="146" y="13" width="55" height="1"></rect>
+        <rect id="path-9" x="9" y="26" width="20" height="1"></rect>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layers---Checkstyle-(python)">
+            <g id="Layers" transform="translate(184.000000, 10.000000)">
+                <polygon id="Green-top" fill="url(#linearGradient-1)" points="0.91796875 102.328125 260.277344 162.394531 359.621094 102.328125 101.039062 40.7617188"></polygon>
+                <polygon id="Green-top" fill="url(#linearGradient-2)" points="1 82.5664062 260.359375 142.632812 359.703125 82.5664062 101.121094 21"></polygon>
+                <polygon id="Green-top" fill="url(#linearGradient-3)" points="0.91796875 62.328125 260.277344 122.394531 359.621094 62.328125 101.039062 0.76171875"></polygon>
+                <path d="M1.5,62.5 L259.5,122.5 L1.5,62.5 Z M260.5,122.5 L359.01879,62.7916423 L260.5,122.5 Z" id="Line" stroke="#3E8F76" stroke-linecap="square"></path>
+                <path d="M1.5,102.5 L259.5,162.5 L1.5,102.5 Z M260.5,162.5 L359.01879,102.791642 L260.5,162.5 Z" id="Line" stroke="#3E8F76" stroke-linecap="square"></path>
+                <path d="M1.5,83.2 L259.5,142.5 L1.5,83.2 Z M260.5,142.5 L358.93327,82.8434725 L260.5,142.5 Z" id="Line" stroke="#3E8F76" stroke-linecap="square"></path>
+            </g>
+            <g id="Left" transform="translate(-21.000000, 26.000000)">
+                <g id="lint-library" transform="translate(36.000000, 80.000000)">
+                    <g id="Rectangle-2" transform="translate(125.500000, 25.500000) rotate(-45.000000) translate(-125.500000, -25.500000) ">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#979797" stroke-width="1" x="99.5" y="25.5" width="52" height="1"></rect>
+                    </g>
+                    <g id="Rectangle-2-Copy">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <rect stroke="#979797" stroke-width="1" x="144.5" y="6.5" width="19" height="1"></rect>
+                    </g>
+                    <path d="M165,1 L165,13 L172,13 L172,14 L164,14 L164,13 L164,1 L164,0 L172,0 L172,1 L165,1 Z" id="Line-4" fill="#979797"></path>
+                    <text id="lint-library-e.g-pyl" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="0.3666667">
+                        <tspan x="46.2542965" y="41" fill="#7A7676">lint library</tspan>
+                        <tspan x="50.3040361" y="55" fill="#A9A3A3">e.g pylint</tspan>
+                    </text>
+                </g>
+                <g id="make-checkstyle" transform="translate(16.000000, 0.000000)">
+                    <path d="M185,41 L185,53 L192,53 L192,54 L184,54 L184,53 L184,41 L184,40 L192,40 L192,41 L185,41 Z" id="Line-4-Copy-2" fill="#979797"></path>
+                    <g id="Rectangle-2">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        <rect stroke="#979797" stroke-width="1" x="164.5" y="46.5" width="19" height="1"></rect>
+                    </g>
+                    <g id="Rectangle-2" transform="translate(145.500000, 27.500000) rotate(45.000000) translate(-145.500000, -27.500000) ">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <rect stroke="#979797" stroke-width="1" x="119.5" y="27.5" width="52" height="1"></rect>
+                    </g>
+                    <text font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="0.3666667" fill="#7A7676">
+                        <tspan x="27.8007808" y="11">make checkstyle</tspan>
+                    </text>
+                </g>
+                <g id="container-runtime" transform="translate(0.000000, 54.000000)">
+                    <g id="Rectangle-2" transform="translate(173.500000, 13.500000) scale(1, -1) translate(-173.500000, -13.500000) ">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-8"></use>
+                        <rect stroke="#979797" stroke-width="1" x="146.5" y="13.5" width="54" height="1"></rect>
+                    </g>
+                    <text id="container-runtime-e." font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="0.3666667">
+                        <tspan x="39.0537755" y="11" fill="#7A7676">container runtime</tspan>
+                        <tspan x="78.3001299" y="25" fill="#A9A3A3">e.g docker</tspan>
+                    </text>
+                    <path d="M201,7 L201,19 L208,19 L208,20 L200,20 L200,19 L200,7 L200,6 L208,6 L208,7 L201,7 Z" id="Line-4-Copy" fill="#979797"></path>
+                </g>
+            </g>
+            <g id="Right" transform="translate(539.000000, 45.000000)">
+                <g id="link" transform="translate(0.000000, 21.000000)">
+                    <g id="Rectangle-2">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        <rect stroke="#979797" stroke-width="1" x="9.5" y="26.5" width="19" height="1"></rect>
+                    </g>
+                    <path d="M1,1 L1,54 L9,54 L9,55 L1,55 L0,55 L0,0 L1,0 L9,0 L9,1 L1,1 Z" id="Line-4-Copy-2" fill="#979797" transform="translate(4.500000, 27.500000) scale(-1, 1) translate(-4.500000, -27.500000) "></path>
+                </g>
+                <g id="e.g-makefile" transform="translate(33.000000, 0.000000)">
+                    <rect id="background" fill="#4E4E4E" x="0" y="18" width="257" height="60"></rect>
+                    <text id=".PHONY:-checkstyle-c" font-family="Helvetica" font-size="12" font-weight="normal">
+                        <tspan x="7" y="36" fill="#ACAAAA">.PHONY: checkstyle</tspan>
+                        <tspan x="115.041016" y="36" fill="#FFFFFF"></tspan>
+                        <tspan x="7" y="50" fill="#59BF9F">checkstyle</tspan>
+                        <tspan x="63.0214844" y="50" fill="#FFFFFF">:</tspan>
+                        <tspan x="66.3554688" y="50" fill="#AC3939"></tspan>
+                        <tspan x="7" y="64" fill="#AC3939">	</tspan>
+                        <tspan x="35" y="64" fill="#FFFFFF">docker run myapp pylint --report=n app</tspan>
+                        <tspan x="242.105469" y="64" fill="#AC3939"></tspan>
+                        <tspan x="7" y="78" fill="#AC3939">	</tspan>
+                    </text>
+                    <text font-family="Helvetica-Oblique, Helvetica" font-size="12" font-style="italic" font-weight="normal" letter-spacing="0.3666667" fill="#9C9A9A">
+                        <tspan x="0" y="11">e.g makefile</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

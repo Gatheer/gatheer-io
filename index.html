@@ -21,111 +21,233 @@
   <meta property="og:site_name" content="gazr.io">
   <meta property="og:description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
   <meta property="og:type" content="website">
-  <!-- Google Tag Manager 
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Gazr"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="images/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./js/app.js"></script>
+  <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PJW7PJJ');</script>
-  -->
   <!-- End Google Tag Manager -->
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) 
+  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJW7PJJ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  -->
   <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <img class="avatar" src="/images/gazr.svg" alt="Gazr">
-        <p><strong>gazr</strong>, pronounced "Gather", is an opinionated way to launch <strong>common tasks</strong> on your project.</p>  
+    <a class="backed" href="http://engineering.dailymotion.com/"><span>backed by</span> <img src="./images/dailymotion.png" alt="dailymotion" /></a>
+    <header id="head">
+        <div class="brand">
+            <h1 class="logo"><img src="/images/gazr.svg" alt="Gazr"></h1>
+        </div>
+        <p class="tagline"><strong>gazr</strong>, pronounced "Gather", is an opinionated way to launch <strong>common tasks</strong> on your project.</p>  
+        <div class="ctas">
+            <a class="cta" href="https://github.com/dailymotion/gazr/tree/master/examples">See project examples on github</a>
+        </div>
     </header>
-    <section>
-        <div class="box">
-            <h2 class="main-title">Main principles</h2>
-            <div class="box-content">
-                <ul>
+    <div class="container">
+        <section id="story">
+            <div class="box">
+                <h2 class="main-title">Story</h2>
+                <div class="box-content">
+                    <p>
+                        Developers live in a technological world which is continuously changing.<br />
+                        Project switching, technology switching, language switching, a big bunch of switching, don't it?<br />
+                        At dailymotion, we take care of the mental health of our engineers, as they work on over 500+ repositories,
+                        developed with more than 50 technological stacks. Therefore we decided to re-think our way to deal with the complexity of our internal codebase.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="main-principles">
+            <div class="box">
+                <h2 class="main-title">Foundation</h2>
+                <div class="box-content">
+                    <ul>
+                        <li>
+                            A Container runtime as the <strong>only</strong> dependency on developer's laptop.
+                            <p class="details">
+                                Docker provides a full integration with <a href="https://www.docker.com/docker-mac">Mac</a>, <a href="https://www.docker.com/docker-windows">Windows</a> & <a href="https://www.docker.com/docker-ubuntu">Linux <em>(ubuntu)</em></a>.
+                            </p>
+                        </li>
+                        <li>
+                            Use generic task names to launch common actions.
+                        </li>
+                        <li>
+                            Let developers use the technologies &amp; libraries they want.
+                        </li>
+                        <li>
+                            Simplify technical on-boarding.
+                        </li>
+                        <li>
+                            Simplify switching between projects.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="specification">
+            <div class="box box-grey">
+                <h2 class="main-title">Tasks specification through <em>Makefile</em></h2>
+                <ul class="make-specification">
                     <li>
-                        A Container runtime as the <strong>only</strong> dependency on developer's laptop.
+                        <span>make checkstyle <a href="#make-checkstyle" class="know-more">1</a></span>
                         <p class="details">
-                            Docker provides a full integration with <a href="https://www.docker.com/docker-mac">Mac</a>, <a href="https://www.docker.com/docker-windows">Windows</a> & <a href="https://www.docker.com/docker-ubuntu">Linux <em>(ubuntu)</em></a>.
+                            Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/checkstyle/checkstyle">checkstyle <em>(java)</em></a> etc ... 
                         </p>
                     </li>
                     <li>
-                        Use generic task names to launch common actions.
+                        <span>make complexity <a href="#make-complexity" class="know-more">2</a></span>
+                        <p class="details">
+                            Cyclomatic complexity check <em><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">(McCabe)</a></em>, <a href="https://pypi.python.org/pypi/radon">radon <em>(python)</em></a>, <a href="https://eslint.org/docs/rules/complexity">eslint (js)</a>, <a href="https://phpmd.org/">PHPMD</a>, <a href="http://www.scalastyle.org/rules-0.5.0.html">rules</a> <em>(scala)</em> etc ...
+                        </p>
                     </li>
                     <li>
-                        Let developers use the technologies &amp; libraries they want.
+                        <span>make fmt <a href="#make-fmt" class="know-more">3</a></span>
+                        <p class="details">
+                            Format code. e.g <a href="https://prettier.io/">Prettier <em>(js)</em></a>, <a href="https://golang.org/pkg/fmt/">fmt <em>(golang)</em></a>
+                        </p>
                     </li>
                     <li>
-                        Simplify technical on-boarding.
+                        <span>make test <a href="#make-test" class="know-more">4</a></span>
+                        <p class="details">
+                            Shortcut to launch function tests, integration tests and unit tests. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ... 
+                        </p>
                     </li>
                     <li>
-                        Simplify switching between projects.
+                        <span>make test-unit</span>
+                    </li>
+                    <li>
+                        <span>make test-functional</span>
+                    </li>
+                    <li>
+                        <span>make test-integration</span>
+                    </li>
+                    <li>
+                        <span>make run <a href="#make-run" class="know-more">5</a></span>
+                        <p class="details">
+                            Locally run the application, e.g. node index.js, python -m myapp, go run myapp etc ... 
+                        </p>
+                    </li>
+                    <li>
+                        <span>make watch <a href="#make-watch" class="know-more">6</a></span>
+                        <p class="details">
+                            Hot reloading for development. 
+                        </p>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="box box-grey">
-            <h2 class="main-title"><em>Makefile</em> specification</h2>
-            <ul class="make-specification">
-                <li>
-                    <span>make checkstyle</span>
-                    <p class="details">
-                        Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/checkstyle/checkstyle">checkstyle <em>(java)</em></a> etc ... 
-                    </p>
-                </li>
-                <li>
-                    <span>make complexity</span>
-                    <p class="details">
-                        Cyclomatic complexity check <em><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">(McCabe)</a></em>, <a href="https://pypi.python.org/pypi/radon">radon <em>(python)</em></a>, <a href="https://eslint.org/docs/rules/complexity">eslint (js)</a>, <a href="https://phpmd.org/">PHPMD</a>, <a href="http://www.scalastyle.org/rules-0.5.0.html">rules</a> <em>(scala)</em> etc ...
-                    </p>
-                </li>
-                <li>
-                    <span>make fmt</span>
-                    <p class="details">
-                        Format code. e.g <a href="https://prettier.io/">Prettier <em>(js)</em></a>, <a href="https://golang.org/pkg/fmt/">fmt <em>(golang)</em></a>
-                    </p>
-                </li>
-                <li>
-                    <span>make test</span>
-                    <p class="details">
-                        Shortcut to launch function tests, integration tests and unit tests. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ... 
-                    </p>
-                </li>
-                <li>
-                    <span>make test-unit</span>
-                </li>
-                <li>
-                    <span>make test-functional</span>
-                </li>
-                <li>
-                    <span>make test-integration</span>
-                </li>
-                <li>
-                    <span>make run</span>
-                    <p class="details">
-                        Locally run the application, e.g. node index.js, python -m myapp, go run myapp etc ... 
-                    </p>
-                </li>
-                <li>
-                    <span>make watch</span>
-                    <p class="details">
-                        Hot reloading for development. 
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <h2>Story</h2>
-        <p>
-            Developers live in a technological world which is continuously changing.<br />
-            Project switching, technology switching, language switching, a big bunch of switching, don't it ?<br />
-            At dailymotion, we take care of the mental health of our engineers, as they work on over 500+ repositories, developed with more than 50 technological<br />
-            stacks. <br />
-            Therefore we decided to re-think our way to deal with the complexity of our internal codebase.
-        </p>
-    </section>
+        </section>
+        <section id="how-it-works">
+            <div class="box box-no-bottom-space">
+                <h2 class="main-title">How it works?</h2>
+                <div class="box-content">
+                    <div id="tasks" class="tabs-container">
+                        <ul class="tabs">
+                            <li><a id="make-checkstyle-link" href="#make-checkstyle">Checkstyle</a></li>
+                            <li><a id="make-complexity-link" href="#make-complexity">Complexity</a></li>
+                            <li><a id="make-fmt-link" href="#make-fmt">Format</a></li>
+                            <li><a id="make-test-link" href="#make-test">Test</a></li>
+                            <li><a id="make-run-link" href="#make-run">Run</a></li>
+                            <li><a id="make-watch-link" href="#make-watch">Watch</a></li>
+                        </ul>
+                        <div class="tab" id="make-checkstyle">
+                            <img src="./images/layers-checkstyle-python.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/checkstyle_python_pylint">See the code example for <strong>Pylint with Python</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/checkstyle_python_pylint_with_docker_compose">See the code example for <strong>Pylint with Python through docker-compose</strong> on github.</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab" id="make-complexity">
+                            <img src="./images/layers-complexity-python.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/complexity_python_xenon">See the code example for <strong>Xenon with Python</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/complexity_python_xenon_with_docker_compose">See the code example for <strong>Xenon with Python through docker-compose</strong> on github.</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab" id="make-fmt">
+                            <img src="./images/layers-fmt-js.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/format_js_prettier">See the code example for <strong>Prettier with Javascript</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/format_js_prettier_with_docker_compose">See the code example for <strong>Prettier with Javascript through docker-compose</strong> on github.</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab" id="make-run">
+                            <img src="./images/layers-run-python.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/run_python">See the code example for <strong>python with docker</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/run_python">See the code example for <strong>python with docker compose</strong> github.</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab" id="make-test">
+                            <img src="./images/layers-test-nodejs.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/test_js_jest">See the code example for <strong>Javascript with Jest</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/test_js_jest">See the code example for <strong>Javascript with Jest through with docker-compose</strong> on github.</a></li>
+                                <!-- TODO: Add samples for unit, functionnal & integation -->
+                            </ul>
+                        </div>
+                        <div class="tab" id="make-watch">
+                            <img src="./images/layers-watch-js.svg" />
+                            <ul>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/watch_js">See the code example for <strong>Javascript with Nodemon</strong> on github.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span class="separator">•••</span>
+        <footer>
+            <section id="network" class="footer-network">
+                <ul>
+                    <li class="network-website">
+                        <a href="http://engineering.dailymotion.com/">
+                            <span class="title">backed by </span>
+                            <span class="logo-container">
+                                <img  src="./images/dailymotion.png" alt="dailymotion" />
+                            </span>
+                        </a>
+                    </li>
+                    <li class="network-twitter">
+                        <a href="https://twitter.com/dailymotionEng">
+                            <span class="title">followed us on twitter </span>
+                            <span class="logo-container twitter-username">@dailymotionEng</span>
+                        </a>
+                    </li>
+                    <li class="network-medium">
+                        <a href="https://medium.com/dailymotion-engineering">
+                            <span class="title">reach us on medium </span>
+                            <span class="logo-container">
+                                <img src="./images/medium.png" alt="dailymotion-engineering" />
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
