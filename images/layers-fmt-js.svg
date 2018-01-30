@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="841px" height="183px" viewBox="0 0 841 183" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Layers - Fmt (javascript)</title>
+    <title>Layers - format (javascript)</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="37.2936359%" y1="-81.312223%" x2="60.1799016%" y2="89.2253838%" id="linearGradient-1">
@@ -24,7 +24,7 @@
         <rect id="path-9" x="9" y="26" width="20" height="1"></rect>
     </defs>
     <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Layers---Fmt-(javascript)">
+        <g id="Layers---format-(javascript)">
             <g id="Layers" transform="translate(184.000000, 10.000000)">
                 <polygon id="Green-top" fill="url(#linearGradient-1)" points="0.91796875 102.328125 260.277344 162.394531 359.621094 102.328125 101.039062 40.7617188"></polygon>
                 <polygon id="Green-top" fill="url(#linearGradient-2)" points="1 82.5664062 260.359375 142.632812 359.703125 82.5664062 101.121094 21"></polygon>
@@ -49,7 +49,7 @@
                         <tspan x="40.2367183" y="55" fill="#A9A3A3">e.g prettier</tspan>
                     </text>
                 </g>
-                <g id="make-fmt" transform="translate(16.000000, 0.000000)">
+                <g id="make-format" transform="translate(16.000000, 0.000000)">
                     <path d="M185,41 L185,53 L192,53 L192,54 L184,54 L184,53 L184,41 L184,40 L192,40 L192,41 L185,41 Z" id="Line-4-Copy-2" fill="#979797"></path>
                     <g id="Rectangle-2">
                         <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-6"></use>
@@ -60,7 +60,7 @@
                         <rect stroke="#979797" stroke-width="1" x="119.5" y="27.5" width="52" height="1"></rect>
                     </g>
                     <text font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="0.3666667" fill="#7A7676">
-                        <tspan x="69.7248695" y="11">make fmt</tspan>
+                        <tspan x="69.7248695" y="11">make format</tspan>
                     </text>
                 </g>
                 <g id="container-runtime" transform="translate(0.000000, 54.000000)">
@@ -85,10 +85,10 @@
                 </g>
                 <g id="e.g-makefile" transform="translate(33.000000, 0.000000)">
                     <rect id="background" fill="#4E4E4E" x="0" y="18" width="257" height="60"></rect>
-                    <text id=".PHONY:-fmt-fmt:-doc" font-family="Helvetica" font-size="12" font-weight="normal">
-                        <tspan x="7" y="36" fill="#ACAAAA">.PHONY: fmt</tspan>
+                    <text id=".PHONY:-format-format:-doc" font-family="Helvetica" font-size="12" font-weight="normal">
+                        <tspan x="7" y="36" fill="#ACAAAA">.PHONY: format</tspan>
                         <tspan x="75.6835938" y="36" fill="#FFFFFF"></tspan>
-                        <tspan x="7" y="50" fill="#59BF9F">fmt</tspan>
+                        <tspan x="7" y="50" fill="#59BF9F">format</tspan>
                         <tspan x="23.6640625" y="50" fill="#FFFFFF">:</tspan>
                         <tspan x="26.9980469" y="50" fill="#AC3939"></tspan>
                         <tspan x="7" y="64" fill="#AC3939">	</tspan>

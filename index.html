@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Gazr [gather] - Opinionated way to launch common tasks on projects</title>
   <meta name="author" content="Stan Chollet">
-  <meta name="description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta name="description" content="Opinionated specification to launch common tasks on your project (tests, style, format, complexity ...).">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
@@ -12,14 +12,14 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="https://gazr.io">
   <meta name="twitter:title" content="Gazr [gather] - Opinionated way to launch common tasks on projects">
-  <meta name="twitter:description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta name="twitter:description" content="Opinionated specification to launch common tasks on your project (tests, style, format, complexity ...).">
   <meta name="twitter:site" content="@dailymotionEng">
   <meta name="twitter:creator" content="@tsunammis">
   <meta property="og:title" content="Gazr [gather] - Opinionated way to launch common tasks on projects">
   <meta property="og:url" content="https://gazr.io">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="gazr.io">
-  <meta property="og:description" content="Opinionated specification to launch common tasks on your project (tests, checkstyle, format, complexity ...).">
+  <meta property="og:description" content="Opinionated specification to launch common tasks on your project (tests, style, format, complexity ...).">
   <meta property="og:type" content="website">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
@@ -93,16 +93,16 @@
                             </p>
                         </li>
                         <li>
-                            Use generic task names to launch common actions.
+                            Using generic task names to launch common actions.
                         </li>
                         <li>
-                            Let developers use the technologies &amp; libraries they want.
+                            Letting developers use the technologies &amp; libraries they want.
                         </li>
                         <li>
-                            Simplify technical on-boarding.
+                            Simplifying technical on-boarding.
                         </li>
                         <li>
-                            Simplify switching between projects.
+                            Simplifying switching between projects.
                         </li>
                     </ul>
                 </div>
@@ -113,9 +113,9 @@
                 <h2 class="main-title">Tasks specification through <em>Makefile</em></h2>
                 <ul class="make-specification">
                     <li>
-                        <span>make checkstyle <a href="#make-checkstyle" class="know-more">1</a></span>
+                        <span>make style <a href="#make-style" class="know-more">1</a></span>
                         <p class="details">
-                            Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/checkstyle/checkstyle">checkstyle <em>(java)</em></a> etc ... 
+                            Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/style/style">style <em>(java)</em></a> etc ... 
                         </p>
                     </li>
                     <li>
@@ -125,9 +125,9 @@
                         </p>
                     </li>
                     <li>
-                        <span>make fmt <a href="#make-fmt" class="know-more">3</a></span>
+                        <span>make format <a href="#make-format" class="know-more">3</a></span>
                         <p class="details">
-                            Format code. e.g <a href="https://prettier.io/">Prettier <em>(js)</em></a>, <a href="https://golang.org/pkg/fmt/">fmt <em>(golang)</em></a>
+                            Format code. e.g <a href="https://prettier.io/">Prettier <em>(js)</em></a>, <a href="https://golang.org/pkg/format/">format <em>(golang)</em></a>
                         </p>
                     </li>
                     <li>
@@ -161,28 +161,23 @@
             </div>
         </section>
         <section id="how-it-works">
-<<<<<<< HEAD
             <div class="box">
                 <h2 class="main-title">How it works?</h2>
-=======
-            <div class="box box-no-bottom-space">
-                <h2 class="main-title">How it works</h2>
->>>>>>> fix(*): Fixed text and markup
                 <div class="box-content">
                     <div id="tasks" class="tabs-container">
                         <ul class="tabs">
-                            <li><a id="make-checkstyle-link" href="#make-checkstyle">Checkstyle</a></li>
+                            <li><a id="make-style-link" href="#make-style">style</a></li>
                             <li><a id="make-complexity-link" href="#make-complexity">Complexity</a></li>
-                            <li><a id="make-fmt-link" href="#make-fmt">Format</a></li>
+                            <li><a id="make-format-link" href="#make-format">Format</a></li>
                             <li><a id="make-test-link" href="#make-test">Test</a></li>
                             <li><a id="make-run-link" href="#make-run">Run</a></li>
                             <li><a id="make-watch-link" href="#make-watch">Watch</a></li>
                         </ul>
-                        <div class="tab" id="make-checkstyle">
-                            <img src="./images/layers-checkstyle-python.svg" />
+                        <div class="tab" id="make-style">
+                            <img src="./images/layers-style-python.svg" />
                             <ul>
-                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/checkstyle_python_pylint">See the code example for <strong>Pylint with Python</strong> on github.</a></li>
-                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/checkstyle_python_pylint_with_docker_compose">See the code example for <strong>Pylint with Python through docker-compose</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/style_python_pylint">See the code example for <strong>Pylint with Python</strong> on github.</a></li>
+                                <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/style_python_pylint_with_docker_compose">See the code example for <strong>Pylint with Python through docker-compose</strong> on github.</a></li>
                             </ul>
                         </div>
                         <div class="tab" id="make-complexity">
@@ -192,8 +187,8 @@
                                 <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/complexity_python_xenon_with_docker_compose">See the code example for <strong>Xenon with Python through docker-compose</strong> on github.</a></li>
                             </ul>
                         </div>
-                        <div class="tab" id="make-fmt">
-                            <img src="./images/layers-fmt-js.svg" />
+                        <div class="tab" id="make-format">
+                            <img src="./images/layers-format-js.svg" />
                             <ul>
                                 <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/format_js_prettier">See the code example for <strong>Prettier with Javascript</strong> on github.</a></li>
                                 <li><a href="https://github.com/dailymotion/gazr/tree/master/examples/format_js_prettier_with_docker_compose">See the code example for <strong>Prettier with Javascript through docker-compose</strong> on github.</a></li>
@@ -229,7 +224,7 @@
                 <ul>
                     <li class="network-website">
                         <a href="http://engineering.dailymotion.com/">
-                            <span class="title">backed by </span>
+                            <span class="title">With the support of </span>
                             <span class="logo-container">
                                 <img  src="./images/dailymotion.png" alt="dailymotion" />
                             </span>
@@ -237,13 +232,13 @@
                     </li>
                     <li class="network-twitter">
                         <a href="https://twitter.com/dailymotionEng">
-                            <span class="title">followed us on twitter </span>
+                            <span class="title">Follow us on Twitter </span>
                             <span class="logo-container twitter-username">@dailymotionEng</span>
                         </a>
                     </li>
                     <li class="network-medium">
                         <a href="https://medium.com/dailymotion-engineering">
-                            <span class="title">reach us on medium </span>
+                            <span class="title">Read us on Medium </span>
                             <span class="logo-container">
                                 <img src="./images/medium.png" alt="dailymotion-engineering" />
                             </span>

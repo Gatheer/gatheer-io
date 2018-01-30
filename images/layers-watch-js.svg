@@ -49,7 +49,7 @@
                         <tspan x="27.9119788" y="55" fill="#A9A3A3">e.g nodemon</tspan>
                     </text>
                 </g>
-                <g id="make-fmt" transform="translate(16.000000, 0.000000)">
+                <g id="make-format" transform="translate(16.000000, 0.000000)">
                     <path d="M185,41 L185,53 L192,53 L192,54 L184,54 L184,53 L184,41 L184,40 L192,40 L192,41 L185,41 Z" id="Line-4-Copy-2" fill="#979797"></path>
                     <g id="Rectangle-2">
                         <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-6"></use>
