@@ -113,6 +113,12 @@
                 <h2 class="main-title">Tasks specification through <em>Makefile</em></h2>
                 <ul class="make-specification">
                     <li>
+                        <span>make init</span>
+                        <p class="details">
+                            Bootstrap your application. e.g. fetch some data files, make some API calls, request user input etc...
+                        </p>
+                    </li>
+                    <li>
                         <span>make style <a href="#make-style" class="know-more">1</a></span>
                         <p class="details">
                             Check lint, code styling rules. e.g. <a href="https://www.pylint.org/">pylint</a>, <a href="https://github.com/squizlabs/PHP_CodeSniffer">phpcs</a>, <a href="https://eslint.org/">eslint</a>, <a href="https://github.com/style/style">style <em>(java)</em></a> etc ... 
@@ -133,17 +139,32 @@
                     <li>
                         <span>make test <a href="#make-test" class="know-more">4</a></span>
                         <p class="details">
-                            Shortcut to launch function tests, integration tests and unit tests. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ... 
+                            Shortcut to launch all the test tasks (unit, functional and integration).
                         </p>
                     </li>
                     <li>
                         <span>make test-unit</span>
+                        <p class="details">
+                            Launch unit tests. e.g. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ...
+                        </p>
                     </li>
                     <li>
                         <span>make test-functional</span>
+                        <p class="details">
+                            Launch functional tests. e.g <a href="//behat.org/">behat</a>, <a href="https://jbehave.org/">JBehave</a>, <a href="https://github.com/behave/behave">Behave</a>, <a href="https://github.com/cucumber/cucumber-js">CucumberJS</a>, <a href="https://cucumber.io/">Cucumber</a> etc...
+                        </p>
                     </li>
                     <li>
                         <span>make test-integration</span>
+                        <p class="details">
+                            Launch integration tests. e.g. <a href="https://docs.pytest.org/en/latest/">pytest</a>, <a href="https://facebook.github.io/jest/">jest (js)</a>, <a href="https://phpunit.de/">phpunit</a>, JUnit <em>(java)</em> etc ...
+                        </p>
+                    </li>
+                    <li>
+                        <span>make security-sast</span>
+                        <p class="details">
+                            launch static application security testing (SAST). e.g <a href="https://github.com/securego/gosec">Gosec</a>, <a href="https://github.com/openstack/bandit">bandit</a>, <a href="https://www.dwheeler.com/flawfinder/">Flawfinder</a>, <a href="https://github.com/ajinabraham/NodeJsScan">NodeJSScan</a>, <a href="https://github.com/FloeDesignTechnologies/phpcs-security-audit">phpcs-security-audit</a>, <a href="https://github.com/presidentbeef/brakeman">brakeman</a> etc...
+                        </p>
                     </li>
                     <li>
                         <span>make run <a href="#make-run" class="know-more">5</a></span>
@@ -155,6 +176,12 @@
                         <span>make watch <a href="#make-watch" class="know-more">6</a></span>
                         <p class="details">
                             Hot reloading for development. 
+                        </p>
+                    </li>
+                    <li>
+                        <span>make build</span>
+                        <p class="details">
+                            Build the application.
                         </p>
                     </li>
                 </ul>
